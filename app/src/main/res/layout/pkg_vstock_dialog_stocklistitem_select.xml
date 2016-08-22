@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dlgbtn_1"
+        android:background="@drawable/bg_dialogitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dip"
+        android:paddingLeft="10dip"
+        android:textSize="@dimen/font_middle"
+        android:gravity="center_vertical"
+        android:text="添加自选"
+        android:textColor="@color/white" />
+
+    <include layout="@layout/pkg_ui_listitem_line1" />
+    <TextView
+        android:id="@+id/dlgbtn_2"
+        android:background="@drawable/bg_dialogitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dip"
+        android:paddingLeft="10dip"
+        android:textSize="@dimen/font_middle"
+        android:gravity="center_vertical"
+        android:text="删除自选"
+        android:textColor="@color/white" />
+
+    <include layout="@layout/pkg_ui_listitem_line1" />
+    <TextView
+        android:id="@+id/dlgbtn_3"
+        android:background="@drawable/bg_dialogitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dip"
+        android:paddingLeft="10dip"
+        android:textSize="@dimen/font_middle"
+        android:gravity="center_vertical"
+        android:text="买入"
+        android:textColor="@color/white" />
+    
+    <include layout="@layout/pkg_ui_listitem_line1" />
+    <TextView
+        android:id="@+id/dlgbtn_4"
+        android:background="@drawable/bg_dialogitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dip"
+        android:paddingLeft="10dip"
+        android:textSize="@dimen/font_middle"
+        android:gravity="center_vertical"
+        android:text="卖出"
+        android:textColor="@color/white" />
+    <include layout="@layout/pkg_ui_listitem_line1" />
+    
+    <TextView
+        android:id="@+id/dlgbtn_5"
+        android:background="@drawable/bg_dialogitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dip"
+        android:textSize="@dimen/font_middle"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="取消"
+        android:textColor="@color/white" />
+    
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/item_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_listitem"
+        android:minHeight="50dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/item_stockname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dip"
+            android:layout_marginLeft="10dip"
+            android:layout_centerVertical="true"
+            android:text="名称"
+            android:textColor="@color/font_content"
+            android:textSize="@dimen/font_large" />
+
+        <TextView
+            android:id="@+id/item_stockprice_lastest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="80dip"
+            android:layout_toRightOf="@id/item_stockname"
+            android:text="最新价"
+            android:layout_centerVertical="true"
+            android:textColor="@color/font_content"
+            android:textSize="@dimen/font_middle" />
+        <TextView
+            android:id="@+id/item_stockprice_offsetrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="60dip"
+            android:layout_toRightOf="@id/item_stockprice_lastest"
+            android:text="涨跌幅"
+            android:layout_centerVertical="true"
+            android:textColor="@color/font_content"
+            android:textSize="@dimen/font_middle" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/item_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/common_divider_line"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

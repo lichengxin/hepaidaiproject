@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/activity_header"
+        layout="@layout/pkg_ui_layout_activity_header" />
+
+    <include layout="@layout/pkg_ui_listitem_line1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="20dip"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/layout_stockcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_label_stockcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dip"
+                android:text="证券代码"
+                android:textColor="@color/black" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/edt_stockcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txt_label_stockcode"
+                android:background="@drawable/edittext_background"
+                android:includeFontPadding="true"
+                android:inputType="number"
+                android:drawableLeft="@drawable/point"
+                android:drawablePadding="2dip"
+                android:minHeight="35dip"
+                android:minWidth="100dip"
+                android:textColor="@color/black" >
+            </EditText>
+        </RelativeLayout>
+
+        <include layout="@layout/pkg_ui_listitem_line1" />
+
+        <RelativeLayout
+            android:id="@+id/layout_pricemode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_stockcode"
+            android:orientation="vertical"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:id="@+id/txt_label_pricemode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dip"
+                android:text="报价方式"
+                android:textColor="@color/black" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/edt_pricemode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txt_label_pricemode"
+                android:background="@drawable/edittext_background"
+                android:drawableLeft="@drawable/point"
+                android:drawablePadding="2dip"
+                android:minHeight="35dip"
+                android:minWidth="100dip"
+                android:textColor="@color/black"  >
+            </EditText>
+        </RelativeLayout>
+
+        <include layout="@layout/pkg_ui_listitem_line1" />
+
+        <RelativeLayout
+            android:id="@+id/layout_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_pricemode"
+            android:orientation="vertical"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:id="@+id/txt_label_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dip"
+                android:text="买入价格"
+                android:inputType="number"
+                android:textColor="@color/black" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/edt_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txt_label_price"
+                android:background="@drawable/edittext_background"
+                android:drawableLeft="@drawable/point"
+                android:drawablePadding="2dip"
+                android:minHeight="35dip"
+                android:minWidth="100dip"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"  >
+            </EditText>
+        </RelativeLayout>
+
+        <include layout="@layout/pkg_ui_listitem_line1" />
+
+        <RelativeLayout
+            android:id="@+id/layout_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_price"
+            android:orientation="vertical"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:id="@+id/txt_label_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dip"
+                android:text="买入数量"
+                android:textColor="@color/black" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/edt_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txt_label_num"
+                android:background="@drawable/edittext_background"
+                android:drawableLeft="@drawable/point"
+                android:drawablePadding="2dip"
+                android:minHeight="35dip"
+                android:minWidth="100dip"
+                android:inputType="number"
+                android:textColor="@color/black"  >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_num"
+            android:orientation="vertical"
+            android:paddingTop="20dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip"
+                    android:text="清空"
+                    android:textColor="@color/black" >
+                </Button>
+
+                <LinearLayout
+                    android:layout_width="60dip"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip"
+                    android:text="下单"
+                    android:textColor="@color/black" >
+                </Button>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

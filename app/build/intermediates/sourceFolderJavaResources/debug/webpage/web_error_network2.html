@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #all{
+                position:absolute;
+                left:50%;
+                top:50%;
+                width:500px; /* 必须制定宽度 */
+                height:200px;
+                margin-top:-100px;
+                margin-left:-250px;
+                 /* margin:0px auto; */
+                /*background-color:blue;*/
+            }
+            #hintimg{
+                position:absolute;
+                left:50%;
+                top:0%;
+                width:50px; /* 必须制定宽度 */
+                height:50px;
+                margin-top:0px;
+                margin-left:-25px;
+            }
+            #hinttext{
+               /* margin:0px auto; */
+               width:60%;
+               margin-left:20%;
+               /* background-color:red; */
+               text-align:center; /* 文字居中 */
+               font-size:32px; /* 文字大小 */
+               /*color:white;  文字颜色 */  
+            }  
+        </style>  
+    </head>  
+    <body>  
+        <div id = "all">
+            <table style = "width:100%;height:100%;" border="0px" cellspacing="1px" cellpadding="1px" >
+            <tr>
+              <td>
+                <img id = "hintimg" src = "img_errorhint.png" alt = "提示">
+              </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="height:80px"></div>
+                </td>
+            </tr>
+            <tr>
+            <td>
+            <div id = "hinttext">网络连接失败，请检查网络是否已连接</div>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="height:80px"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id = "hinttext"><a href="http://www.hepaidai.com/login">点击刷新页面</a></div>
+                </td>
+            </tr>
+            </table>
+        </div>
+    </body>  
+</html>

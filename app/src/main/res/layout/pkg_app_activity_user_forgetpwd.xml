@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activity_bg"
+        android:orientation="vertical" >
+
+        <include layout="@layout/pkg_ui_view_activity_head" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dip"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/edUserAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginRight="12dip"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ico_account"
+                    android:drawablePadding="5dip"
+                    android:hint="请输入手机号"
+                    android:inputType="phone"
+                    android:maxLength="16"
+                    android:paddingLeft="1dip"
+                    android:singleLine="true"
+                    android:textColor="@color/font_content"
+                    android:textColorHint="#9f9f9f"
+                    android:textSize="@dimen/font_large" >
+                </EditText>
+            </LinearLayout>
+            
+            <include layout="@layout/pkg_ui_listitem_line1" />
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_gravity="center_vertical" >
+
+                <Button
+                    android:id="@+id/btnDisplayPwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dip"
+                    android:background="@drawable/btn_see" />
+
+                <EditText
+                    android:id="@+id/edPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginRight="12dip"
+                    android:layout_toLeftOf="@id/btnDisplayPwd"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ico_password"
+                    android:drawablePadding="5dip"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:maxLength="12"
+                    android:paddingLeft="1dip"
+                    android:singleLine="true"
+                    android:textColor="@color/font_content"
+                    android:textColorHint="#9f9f9f"
+                    android:textSize="@dimen/font_large" >
+                </EditText>
+            </RelativeLayout>
+            
+            <include layout="@layout/pkg_ui_listitem_line1" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginRight="12dip" >
+
+                    <Button
+                        android:id="@+id/btnGetVerifyCode"
+                        android:layout_width="130dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="获取验证码"
+                        android:textColor="#2a2a2a"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edVerifyCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/btnGetVerifyCode"
+                        android:background="@null"
+                        android:drawablePadding="5dip"
+                        android:hint="请输入验证码"
+                        android:maxLength="12"
+                        android:singleLine="true"
+                        android:textColor="@color/font_content"
+                        android:textColorHint="#9f9f9f"
+                        android:textSize="@dimen/font_large" >
+                    </EditText>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <include layout="@layout/pkg_ui_listitem_line1" />
+        
+        <LinearLayout
+            android:id="@+id/layout_error"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="6dip"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/ico_error1" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/txtError"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="2dip"
+                android:textColor="@color/text_error_red"
+                android:textSize="16sp" >
+            </TextView>
+        </LinearLayout>
+        
+        <include layout="@layout/pkg_ui_item_btn_action_blue" />
+    </LinearLayout>
+
+</RelativeLayout>

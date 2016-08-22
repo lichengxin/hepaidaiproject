@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+	<color name="black">#000000</color>
+	<color name="gray">#808080</color>
+    <color name="RoyalBlue">#4169E1</color>
+		
+    <color name="activity_bg">#FFFFFF</color>
+    <color name="listitem_black">#ffadadad</color>
+    <color name="menuitem_selected">#e2e6e7</color>
+    <color name="menuitem_splitline">#e3e4e6</color>
+    <color name="LightSteelBlue">#B0C4DE</color>
+    <color name="text_error_red">#e95757</color>
+    <color name="color_headbar">#303537</color>
+    <color name="titlecolor_headbar">#ffffffff</color>
+    <color name="bg_top_tab">#0495ce</color>
+    <color name="bg_top_tab1">#11abe8</color>
+    <color name="bg_top_tab_unselected">#dcdde1</color>
+    <color name="bg_gray1">#fff4f4f4</color>
+    <color name="bg_form_item_normal">#ffffff</color>
+    <color name="common_item_p">#ffe8e8e8</color>
+    <color name="bg_form_item_pressed">#ffe8e8e8</color>
+    <color name="font_content">#454545</color>
+    <color name="border">#ffcecece</color>    
+    <color name="line_gray_1">#ffd5ceb9</color>
+    <color name="listitem_gray_1">#ffededed</color>    
+    <color name="dialogitem_gray_1">#ff1F1F1F</color>
+    <color name="common_divider_line">#e1e1e1</color>
+    
+    <color name="font_gray">#b6b6b6</color>    
+    <color name="font_gray_1">#ff9d9d9d</color>
+    <color name="font_gray_2">#ffb3b3b3</color>
+    <color name="font_gray_3">#ff918c7f</color>
+    <color name="font_gray_4">#ffbfcfe0</color>
+    <color name="font_gray_5">#ff8b9fb7</color>
+    <color name="font_highlight">#ff487587</color>
+    <color name="font_highlight2">#ff3f809a</color>
+    <color name="font_tag_1">#ff818181</color>
+    <color name="font_button_pressed">#ff80c5f2</color>
+    <color name="font_button_normal">#ff028ce6</color>
+    <color name="font_top_title">#ffffff</color>
+    <color name="font_clickable">#487587</color>
+    <color name="font_button_blue">#057cf3</color>
+    <!--列表分割线-->
+    <color name="list_divider">#19000000</color>
+    </resources>

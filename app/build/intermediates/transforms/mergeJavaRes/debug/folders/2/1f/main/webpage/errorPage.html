@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #all{
+                position:absolute;
+                left:50%;
+                top:35%;
+                width:500px; /* 必须制定宽度 */
+                height:200px;
+                margin-top:-100px;
+                margin-left:-250px;
+                 /* margin:0px auto; */
+                /*background-color:blue;*/
+            }
+            #hintimg{
+                width:100px; /* 必须制定宽度 */
+                height:100px;
+                margin-bottom: 40px;
+            }
+        #logoimg{
+            width:200px; /* 必须制定宽度 */
+            height:200px;
+            margin-bottom: 40px;
+        }
+            #hinttext{
+               /* margin:0px auto; */
+               /* background-color:red; */
+               text-align:center; /* 文字居中 */
+               font-size:45px; /* 文字大小 */
+               /*color:white;  文字颜色 */
+            }
+            #hinttext a{
+                text-decoration: none;
+                color: #007ccb;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "all">
+            <table style = "width:100%;height:100%;" border="0px" cellspacing="1px" cellpadding="1px" >
+                <tr>
+                    <td align="center">
+                        <img id = "logoimg" src = "img_errorlogo.png" alt = "合拍贷">
+                            </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <br>
+                    </td>
+                </tr>
+            <tr>
+              <td align="center">
+                <img id = "hintimg" src = "img_errorhint.png" alt = "提示">
+              </td>
+            </tr>
+            <tr>
+            <td align="center">
+            <div id = "hinttext">网络连接失败，请检查<br>网络是否已连接</div>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="height:80px"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id = "hinttext"><a href="http://www.hepaidai.com/login">点击刷新页面</a></div>
+                </td>
+            </tr>
+            </table>
+        </div>
+    </body>
+</html>

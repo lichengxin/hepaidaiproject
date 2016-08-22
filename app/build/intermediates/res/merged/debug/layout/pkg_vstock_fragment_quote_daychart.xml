@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:layout_alignParentBottom="true" >
+
+        <RelativeLayout
+            android:id="@+id/layout_bottom_row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="4dip" >
+
+            <TextView
+                android:id="@+id/txt_label_quote_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dip"
+                android:text="开盘"
+                android:textColor="@color/white"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_quote_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dip"
+                android:layout_toRightOf="@id/txt_label_quote_open"
+                android:minWidth="50dip"
+                android:text="0.00"
+                android:textColor="@color/white"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_label_quote_priceoffset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@id/txt_quote_open"
+                android:text="涨跌"
+                android:textColor="@color/white"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_quote_priceoffset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@id/txt_label_quote_priceoffset"
+                android:text="0.00"
+                android:textColor="@color/white"
+                android:minWidth="50dip"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_label_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@id/txt_quote_priceoffset"
+                android:text="日期"
+                android:textColor="@color/white"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@id/txt_label_date"
+                android:text="20151009"
+                android:textColor="@color/white"
+                android:textSize="12sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_bottom_row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_bottom_row1"
+            android:layout_marginLeft="8dip"            
+            android:layout_marginTop="4dip" >
+
+            <TextView
+                android:id="@+id/txt_label_quote_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dip"
+                android:text="收盘"
+                android:textColor="@color/white"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_quote_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dip"
+                android:layout_toRightOf="@id/txt_label_quote_close"
+                android:minWidth="50dip"
+                android:text="0.00"
+                android:textColor="@color/white"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_label_quote_priceoffsetrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@id/txt_quote_close"
+                android:text="涨幅"
+                android:textColor="@color/white"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_quote_priceoffsetrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:minWidth="50dip"
+                android:layout_toRightOf="@id/txt_label_quote_priceoffsetrate"
+                android:text="0.00%"
+                android:textColor="@color/white"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_label_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@id/txt_quote_priceoffsetrate"
+                android:text="金额"
+                android:textColor="@color/white"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@id/txt_label_amount"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="12sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_bottom_row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_bottom_row2"
+            android:layout_marginLeft="8dip"            
+            android:layout_marginTop="4dip" >
+
+            <TextView
+                android:id="@+id/txt_label_quote_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dip"
+                android:text="最高"
+                android:textColor="@color/white"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_quote_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dip"
+                android:layout_toRightOf="@id/txt_label_quote_high"
+                android:minWidth="50dip"
+                android:text="0.00"
+                android:textColor="@color/white"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_label_quote_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@id/txt_quote_high"
+                android:text="最低"
+                android:textColor="@color/white"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_quote_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@id/txt_label_quote_low"
+                android:text="0.00"
+                android:minWidth="50dip"
+                android:textColor="@color/white"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_label_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@id/txt_quote_low"
+                android:text="总量"
+                android:textColor="@color/white"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@id/txt_label_volume"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="12sp" >
+            </TextView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_stockchart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_bottom" >
+    </RelativeLayout>
+
+</RelativeLayout>

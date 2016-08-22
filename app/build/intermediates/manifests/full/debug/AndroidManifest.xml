@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhehui.hepaidai"
+    android:versionCode="2"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 添加可以向外拨打电话的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name="com.hepaidai.App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="CHANNEL"
+            android:value="HEPAIDAI" />
+        <!-- meta-data android:name="CHANNEL" android:value="HEPAIDAI" / -->
+        <!-- android:debuggable="true" -->
+        <!-- android:name="com.hepaidai.App" -->
+        <!-- android:name="com.zhijiaoyi.vstock.App" -->
+        <activity android:name="com.app.activity.ActivityAppAbout" >
+        </activity>
+        <activity android:name="com.app.activity.ActivityAppGuide" >
+
+            <!--
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>    
+            -->
+        </activity>
+        <activity android:name="com.app.activity.ActivityAppSplash" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name="com.app.activity.ActivityUserForgetPwd" >
+        </activity>
+        <activity android:name="com.app.activity.ActivityUserRegister" >
+        </activity>
+        <activity android:name="com.app.activity.ActivityUserUnlock" >
+        </activity>
+        <activity android:name="com.app.activity.ActivityUserLogin" >
+        </activity>
+        <activity
+            android:name="com.app.activity.DialogAppUpdate"
+            android:theme="@style/Theme_Dialog_Transparent" >
+
+            <!--
+            android:theme="@android:style/Theme.Dialog"
+            android.theme="@style/Theme_DialogTransparent"
+            -->
+        </activity>
+        <activity
+            android:name="com.zhijiaoyi.vstock.activity.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hepaidai.activity.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.hepaidai.activity.WebViewActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity android:name="com.zhijiaoyi.vstock.activity.ActivityListItem" >
+        </activity>
+        <!--
+        <receiver android:name=".AlarmReceiver" android:process=":remote">  
+            <intent-filter>  
+                <action android:name="android.intent.action.ALARM_RECEIVER" />
+                < action android:name="com.base.activity.alarmintent" >  
+                < data android:mimeType="vnd.android.cursor.item/calendar-alert" >  
+            </intent-filter>  
+        </receiver>  
+        <service  
+          android:name="com.base.app.AlarmService"  
+          android:enabled="true" >  
+          <intent-filter android:priority="1000" >  
+             <action android:name="android.intent.action.AppService" />  
+          </intent-filter>  
+        </service>
+        -->
+    </application>
+
+</manifest>

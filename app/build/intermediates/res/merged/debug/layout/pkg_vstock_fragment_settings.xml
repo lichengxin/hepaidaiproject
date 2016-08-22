@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_header_height" 
+        android:background="@drawable/title">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/font_large"
+            android:textColor="@color/white"
+            android:text="设置"></TextView>
+    </RelativeLayout>
+    
+    <include layout="@layout/pkg_ui_listitem_line2" />
+    <include android:id="@+id/item_myinfo" layout="@layout/pkg_ui_listitem_text" />
+    <include layout="@layout/pkg_ui_listitem_line1" />    
+    <include android:id="@+id/item_myaccount" layout="@layout/pkg_ui_listitem_text" />
+    <include layout="@layout/pkg_ui_listitem_line2" />
+    <include android:id="@+id/item_protocol" layout="@layout/pkg_ui_listitem_text" />
+    <include layout="@layout/pkg_ui_listitem_line2" />
+    <include android:id="@+id/item_message" layout="@layout/pkg_ui_listitem_text" />
+    <include layout="@layout/pkg_ui_listitem_line2"/>
+    <include android:id="@+id/item_myservice" layout="@layout/pkg_ui_listitem_text" />
+    <include layout="@layout/pkg_ui_listitem_line1"/>
+    <include android:id="@+id/item_feedback" layout="@layout/pkg_ui_listitem_text" />
+    <include layout="@layout/pkg_ui_listitem_line2"/>
+    <include android:id="@+id/item_settings" layout="@layout/pkg_ui_listitem_text" />
+    <include layout="@layout/pkg_ui_listitem_line2"/>
+    <include android:id="@+id/item_logout" layout="@layout/pkg_ui_listitem_text" />
+    <include layout="@layout/pkg_ui_listitem_line1"/>
+    <include android:id="@+id/item_exit" layout="@layout/pkg_ui_listitem_text" />
+    <include layout="@layout/pkg_ui_listitem_line1"/>
+</LinearLayout>
